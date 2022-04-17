@@ -1,2 +1,2 @@
-﻿int number = 918;
+﻿int number = 456;
 Console.WriteLine(number / 10 % 10);
