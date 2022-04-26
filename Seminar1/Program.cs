@@ -32,4 +32,4 @@
 //}   
 //Method21(msg: "Текст", count: 4);
 
-int SumToA(int A)
+
