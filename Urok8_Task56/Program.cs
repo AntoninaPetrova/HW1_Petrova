@@ -30,26 +30,26 @@ void PrintArray(int[,] array)
 
 void MinSumRow(int[,] array)
 {
-int sum = 0;  
-int minrow = Int32.MaxValue; 
-int rownumber = 0; 
+    int sum = 0;
+    int minrow = Int32.MaxValue;
+    int rownumber = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
         sum = 0;
         for (int j = 0; j < array.GetLength(1); j++)
         {
-           
-            sum +=array[i, j];
-            
+
+            sum += array[i, j];
+
         }
         if (sum < minrow)
         {
-        minrow = sum; 
-        rownumber = i+1;       
+            minrow = sum;
+            rownumber = i + 1;
         }
 
     }
-System.Console.WriteLine($"Строка номер {rownumber} с наименьшей суммой элементов {minrow}");
+    System.Console.WriteLine($"Строка номер {rownumber} с наименьшей суммой элементов {minrow}");
 
 }
 

@@ -24,24 +24,23 @@ void PrintArray(int[,] array)
     }
 }
 
-               
-        int[,] Multiplication(int[,] array1, int[,] array2)
-        {
-            if (array1.GetLength(1) != array2.GetLength(0)) throw new Exception("Матрицы нельзя перемножить");
-            int[,] result = new int[array1.GetLength(0), array2.GetLength(1)];
-            for (int i = 0; i < array1.GetLength(0); i++)
-            {
-                for (int j = 0; j < array2.GetLength(1); j++)
-                {
-                    for (int k = 0; k < array2.GetLength(0); k++)
-                    {
-                        result[i,j] += array1[i,k] * array2[k,j];
-                    }
-                }
-            }
-            return result;
-        }
 
+int[,] Multiplication(int[,] array1, int[,] array2)
+{
+    if (array1.GetLength(1) != array2.GetLength(0)) throw new Exception("Матрицы нельзя перемножить");
+    int[,] result = new int[array1.GetLength(0), array2.GetLength(1)];
+    for (int i = 0; i < array1.GetLength(0); i++)
+    {
+        for (int j = 0; j < array2.GetLength(1); j++)
+        {
+            for (int k = 0; k < array2.GetLength(0); k++)
+            {
+                result[i, j] += array1[i, k] * array2[k, j];
+            }
+        }
+    }
+    return result;
+}
 
 int[,] array1 = new int[3, 3];
 int[,] array2 = new int[3, 3];
