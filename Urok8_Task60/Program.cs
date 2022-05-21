@@ -40,7 +40,7 @@ int[,,] array = new int[3, 2, 3];
 
 if (array.GetLength(0) * array.GetLength(1) * array.GetLength(2) > 90)
 {
-    System.Console.Write("Матрицу нельзя заполнить неповторяющимися двузначными числами");
+    System.Console.Write("Матрицу нельзя заполнить неповторяющимися положительными двузначными числами");
 }
 else
 {
