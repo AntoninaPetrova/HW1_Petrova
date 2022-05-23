@@ -1,4 +1,4 @@
-﻿void FillArrayRandom(int [,] array, int minValue, int maxValue)
+﻿/*void FillArrayRandom(int [,] array, int minValue, int maxValue)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -25,7 +25,7 @@ n = int.Parse(Console.ReadLine());
 
 int[,] array = new int[m, n];
 FillArrayRandom(array, -9, 10);
-PrintArray(array);
+PrintArray(array);*/
 
 //int SummDiagonal (int[,] array)
 //{
